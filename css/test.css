@@ -1,0 +1,223 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Play);
+@import url(all.min.css);
+@import url(normalize.css);
+@import url(hover-min.css);
+
+body {
+  font-family: 'Play', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 45px;
+  background: #222;
+}
+
+.visual {
+  width: 100%;
+  height: 500px;
+  background-color: #fce043;
+  background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  background-size: 100%;
+  transition: all 0.5s;
+}
+
+.visual:hover {
+  background-size: 140%;
+}
+
+main {
+  height: 200px;
+}
+
+footer {
+  padding: 20px 0;
+  background: #ddd;
+}
+
+.h-con,
+.v-con,
+.f-con {
+  width: 1000px;
+  margin: auto;
+}
+
+header h1 {
+  float: left;
+  font-weight: normal;
+}
+
+header h1 a {
+  display: block;
+  color: #eee;
+  font-size: 25px;
+  padding: 10px;
+}
+
+header h1 a:hover {
+  color: #999;
+}
+
+
+header .gnb {
+  float: right;
+  width: 950px;
+}
+
+header .gnb a {
+  display: block;
+  float: left;
+  width: 12.5%;
+  color: #eee;
+  line-height: 45px;
+  text-align: center;
+}
+
+header .gnb a:hover {
+  color: #777;
+}
+
+
+.visual .v-con {
+  position: relative;
+  height: 100%;
+  background: url(../img/ip1.png) no-repeat 10px 50px / 40%;
+  transition: all 1s;
+}
+
+.visual .v-con:hover {
+  background-position: 100px 50px;
+}
+
+.visual .text-box {
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  color: #efefef;
+  text-align: center;
+}
+
+.visual .text-box h2 {
+  line-height: 1.5em;
+  font-size: 50px;
+  font-weight: normal;
+  text-shadow: 3px 3px 3px #111, 6px 6px 6px #333;
+}
+
+.visual .text-box p {
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #111, 3px 3px 3px #333;
+}
+
+.visual .price-t {
+  color: #fb7ba2;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.visual .text-box a {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  border: solid 1px;
+  transition: all 0.3s;
+}
+
+.visual .text-box a:nth-of-type(1) {
+  float: left;
+}
+
+.visual .text-box a:nth-of-type(2) {
+  float: right;
+}
+
+.visual .text-box a:hover {
+  color: #fb7ba2;
+}
+
+
+
+
+main article {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+main article a {
+  display: block;
+  height: 100%;
+  background: no-repeat 45% center;
+  transition: all 0.5s;
+}
+
+main article h3 {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+main article:nth-child(1) a {
+  background-image: url(../img/1.jpg)
+}
+
+main article:nth-child(2) a {
+  background-image: url(../img/2.jpg)
+}
+
+main article:nth-child(3) a {
+  background-image: url(../img/3.jpg)
+}
+
+main article:nth-child(4) a {
+  background-image: url(../img/4.jpg)
+}
+
+main article a:hover {
+  background-position: 50% center;
+}
+
+
+footer {
+  font-size: 0.8em;
+}
+
+footer address {
+  font-size: normal;
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+footer .copyright {
+  float: left;
+}
+
+
+footer .fnb {
+  float: left;
+  margin-left: 100px;
+}
+
+footer .fnb a {
+  float: left;
+  padding: 0 10px;
+}
+
+footer .fnb a:hover {
+  color: #fb7ba2;
+}
+
+footer .fnb a:not(:last-child) {
+  border-right: 1px solid #777;
+}
+
+footer .nation {
+  float: right;
+  background: url(../img/kr-flag.png) no-repeat left;
+  background-size: contain;
+  padding-left: 15px;
+}
